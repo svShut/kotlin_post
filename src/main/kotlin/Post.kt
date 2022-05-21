@@ -17,24 +17,30 @@ data class Audio (
     val isHq: Boolean = false
         )
 
-data class attachmentAudio (
-    override val type: Audio
+data class AudioAttachment (
+    override val type: String = "audio",
+    val audio: Audio
+
         ) : Attachment
 
-data class attachmentVideo (
-    override val type: Video
+data class VideoAttachment (
+    override val type: String = "video",
+    val video: Video
 ) : Attachment
 
-data class attachmentPhoto (
-    override val type: Photo
+data class PhotoAttachment (
+    override val type: String = "photo",
+    val photo: Photo
 ) : Attachment
 
-data class attachmentLink (
-    override val type: Link
+data class LinkAttachment (
+    override val type: String = "link",
+    val link: Link
 ) : Attachment
 
-data class attachmentNote (
-    override val type: Note
+data class NoteAttachment (
+    override val type: String = "note",
+    val note: Note
 ) : Attachment
 
 
