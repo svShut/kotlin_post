@@ -1,7 +1,4 @@
 import org.junit.jupiter.api.Test
-
-import org.junit.jupiter.api.Assertions.*
-
 internal class WallServiceTest {
 
     private val service = WallService
@@ -41,5 +38,12 @@ internal class WallServiceTest {
                 attachments = arrayListOf(attachmentAudio(audio1))
             )
         )
+    }
+
+    @Test
+    fun create_Comment() {
+        val fromId = 3
+        service.posts
+        service.createComment(Comment(2,2,453,"text"))
     }
 }

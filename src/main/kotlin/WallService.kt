@@ -1,7 +1,7 @@
 
 object WallService {
 
-    private var posts = HashMap<Int?, Post?>()
+    var posts = HashMap<Int?, Post?>()
     private var comments = HashMap<Int?, Comment?>()
     private var postId = 1
     private var commentId = 1
