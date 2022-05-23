@@ -72,5 +72,12 @@ data class Video (
     val views: Int = 0
         )
 
+data class Comment(
+    val id: Int,
+    val fromId: Int,
+    val date: Long,
+    val text: String?
+)
+
 
 
